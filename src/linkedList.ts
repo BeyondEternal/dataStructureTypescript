@@ -1,44 +1,44 @@
-import {INode} from "./node"
+import { INode } from './node'
 
 export class Linked {
-  head: INode;
-  tail: INode;
-  size: number = 0;
+  head: INode
+  tail: INode
+  size: number = 0
 
-  constructor(node: INode) {
-    this.head = node;
-    this.tail = node;
-    this.size = 1;
+  constructor (node: INode) {
+    this.head = node
+    this.tail = node
+    this.size = 1
   }
 
-  getHead(): INode{
-    return this.head;
+  getHead (): INode {
+    return this.head
   }
 
-  prepend(node: INode) {
-    node.next = this.head;
-    this.head = node;
-    this.size++;
+  prepend (node: INode) {
+    node.next = this.head
+    this.head = node
+    this.size++
   }
 
-  append(node: INode) {
-    node.next = null;
-    this.tail.next = node;
-    this.tail = node;
-    this.size++;
+  append (node: INode) {
+    node.next = null
+    this.tail.next = node
+    this.tail = node
+    this.size++
   }
-  
-  traverse() {
+
+  traverse () {
     let node: INode | null = this.head
-    while(node){
+    while (node != null) {
       console.log(node.data)
       node = node.next
     }
   }
 
-  contains(value: string | number): boolean {
+  contains (value: string | number): boolean {
     let node: INode | null = this.head
-    while (node) {
+    while (node != null) {
       if (value == node.data) {
         return true
       }
@@ -47,7 +47,7 @@ export class Linked {
     return false
   }
 
-  getTail(): INode {
+  getTail (): INode {
     return this.tail
   }
 }
