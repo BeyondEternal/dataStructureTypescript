@@ -1,7 +1,7 @@
 {
   "name": "datatructuretypescript",
   "version": "1.0.0",
-  "description": "",
+  "description": "Most Common Data Structure Algorithms",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,9 +10,17 @@
     "lint": "ts-standard --fix",
     "start": "node build/index.js"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeyondEternal/dataStructureTypescript"
+  },
+  "keywords": ["Data Structure", "Data", "Algorithms"],
+  "author": "BeyondEternal",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BeyondEternal/dataStructureTypescript/issues"
+  },
+  "homepage": "https://github.com/BeyondEternal/dataStructureTypescript#readme",
   "devDependencies": {
     "ts-node-dev": "2.0.0",
     "ts-standard": "12.0.2",
